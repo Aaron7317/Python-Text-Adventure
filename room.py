@@ -19,6 +19,7 @@ class Room:
     def room_exit(self):
         pass
 
+
 class Shrine(Room):
 
     def __init__(self, connections):
@@ -28,3 +29,7 @@ class Shrine(Room):
         player.heal()
 
 
+class Shop(Room):
+
+    def __init__(self, connections):
+        super().__init__(connections)
